@@ -17,7 +17,7 @@ do
     #current default board is ZC706, which we don't use in our synthesis
     mv zynq.hw-resources zynq.hw-resources-ZC706
     #copy Vivado commands for ZedBoard Synthesis
-    cp ../zynq.hw-resources-zedboard zynq.hw-resources
+    cp -r ../zynq.hw-resources-zedboard zynq.hw-resources
     make hw
     #copy the synthesis report 
     cp verilog-zynq/par_utilization.rpt ../../reports/par_utilization_$i.rpt
