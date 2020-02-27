@@ -20,7 +20,7 @@ do
     cp ../zynq.hw-resources-zedboard zynq.hw-resources
     make hw
     #copy the synthesis report 
-    cp /verilog-zynq/par_utilization.rpt ../../reports/
+    cp verilog-zynq/par_utilization.rpt ../../reports/par_utilization_$i.rpt
     cd ../..
     
 done
